@@ -45,6 +45,12 @@ public class SparqlController {
         logger.info("Consulta SPARQL generada: " + naturalQuery);
         String sparqlQuery = convertNaturalToSparql(naturalQuery);
 
+        // Manejo especial para consultas dirigidas a DBpedia
+        if (sparqlQuery != null && sparqlQuery.startsWith("DBPEDIA:")) {
+            String dbpediaQuery = sparqlQuery.replace("DBPEDIA:", ""); // Extraer consulta SPARQL para DBpedia
+            return queryDbpedia(dbpediaQuery);
+        }
+
         if (sparqlQuery == null) {
             return "Consulta no reconocida. Intenta con términos como 'dame el platillo tres', 'primero procedimiento de coccion', o 'platillos'.";
         }
@@ -62,6 +68,21 @@ public class SparqlController {
     
         logger.info("convertNaturalToSparql: " + naturalQuery);
     
+        if (naturalQuery.contains("nombres de chefs")) {
+            // Devuelve una consulta específica para DBpedia
+            return "DBPEDIA:PREFIX dbo: <http://dbpedia.org/ontology/>\n" +
+                  "PREFIX dbr: <http://dbpedia.org/resource/>\n" +
+                  "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
+                  "SELECT ?chef ?name ?birthPlace\n" +
+                  "WHERE {\n" +
+                  "  ?chef a dbo:Chef ;\n" +
+                  "        rdfs:label ?name ;\n" +
+                  "        dbo:birthPlace ?birthPlace .\n" +
+                  "  FILTER (lang(?name) = \"en\")\n" +
+                  "}\n" +
+                  "LIMIT 10";
+        }
+
         // Consultas específicas basadas en términos y mapa
         if (naturalQuery.contains("platillos que tienen carne")) {
             return "SELECT ?platillo WHERE { ?platillo <http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11/ingrediente> " + termMappings.get("carne") + " . }";
@@ -89,6 +110,21 @@ public class SparqlController {
         return null;
     }
 
+    private String queryDbpedia(String query) {
+        String dbpediaEndpoint = "https://dbpedia.org/sparql";
+
+        try {
+            Query sparqlQuery = QueryFactory.create(query);
+            try (QueryExecution qexec = QueryExecutionFactory.sparqlService(dbpediaEndpoint, sparqlQuery)) {
+                ResultSet results = qexec.execSelect();
+                return ResultSetFormatter.asText(results);
+            }
+        } catch (Exception e) {
+            logger.severe("Error al ejecutar consulta en DBpedia" + e);
+            return "Error al realizar consulta en DBpedia.";
+        }
+    }
+
     @PostMapping("/query")
     public String executeQuery(@RequestBody String sparqlQuery) {
         logger.info("Ejecutando consulta SPARQL: " + sparqlQuery);
@@ -101,4 +137,32 @@ public class SparqlController {
             return "Error al ejecutar la consulta: " + e.getMessage();
         }
     }
+
+    @PostMapping("/dbpedia-query")
+    public String executeDbpediaQuery(@RequestBody String naturalQuery) {
+        try {
+            // Si no hay consulta proporcionada, usar una consulta predeterminada
+            String dbpediaQuery = naturalQuery.isEmpty()
+                ? "PREFIX dbo: <http://dbpedia.org/ontology/>\n" +
+                  "PREFIX dbr: <http://dbpedia.org/resource/>\n" +
+                  "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
+                  "SELECT ?chef ?name ?birthPlace\n" +
+                  "WHERE {\n" +
+                  "  ?chef a dbo:Chef ;\n" +
+                  "        rdfs:label ?name ;\n" +
+                  "        dbo:birthPlace ?birthPlace .\n" +
+                  "  FILTER (lang(?name) = \"en\")\n" +
+                  "}\n" +
+                  "LIMIT 10"
+                : naturalQuery;
+
+            // Ejecutar la consulta
+            return queryDbpedia(dbpediaQuery);
+        } catch (Exception e) {
+            // Registro de errores para depuración
+            logger.info("Error al ejecutar consulta en DBpedia" + e);
+            return "Error al ejecutar la consulta: " + e.getMessage();
+        }
+    }
+
 }

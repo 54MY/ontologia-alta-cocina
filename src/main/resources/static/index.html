@@ -1,30 +1,83 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Consulta SPARQL</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consulta SPARQL y Lenguaje Natural</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        textarea {
+            width: 100%;
+        }
+        button {
+            margin-top: 10px;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ccc;
+            overflow-x: auto;
+        }
+    </style>
 </head>
 <body>
     <h1>Consulta SPARQL o Lenguaje Natural</h1>
 
     <label for="query-type">Tipo de Consulta:</label>
-    <select id="query-type">
+    <select id="query-type" onchange="handleQueryTypeChange()">
         <option value="sparql">Consulta SPARQL</option>
         <option value="natural">Lenguaje Natural</option>
+        <option value="dbpedia">Consulta DBpedia</option>
     </select><br><br>
 
     <textarea id="query" rows="10" cols="50" placeholder="Escribe tu consulta aquí"></textarea><br>
     <button onclick="sendQuery()">Enviar Consulta</button>
-    <pre id="results"></pre>
+
+    <h2>Resultados</h2>
+    <pre id="results">Los resultados aparecerán aquí...</pre>
 
     <script>
+        function handleQueryTypeChange() {
+            const queryType = document.getElementById("query-type").value;
+            const queryField = document.getElementById("query");
+
+            if (queryType === "dbpedia") {
+                queryField.value = "PREFIX dbo: <http://dbpedia.org/ontology/>\n" +
+                  "PREFIX dbr: <http://dbpedia.org/resource/>\n" +
+                  "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>\n" +
+                  "SELECT ?chef ?name ?birthPlace\n" +
+                  "WHERE {\n" +
+                  "  ?chef a dbo:Chef ;\n" +
+                  "        rdfs:label ?name ;\n" +
+                  "        dbo:birthPlace ?birthPlace .\n" +
+                  "  FILTER (lang(?name) = \"en\")\n" +
+                  "}\n" +
+                  "LIMIT 10";
+                queryField.placeholder = "Ejemplo: Buscar información de ciudades en DBpedia.";
+            } else if (queryType === "natural") {
+                queryField.value = "";
+                queryField.placeholder = "Escribe tu consulta en lenguaje natural (Ej: Platillos que tienen carne)";
+            } else {
+                queryField.value = "";
+                queryField.placeholder = "Escribe tu consulta SPARQL aquí";
+            }
+        }
+
         async function sendQuery() {
             const queryType = document.getElementById("query-type").value;
-            const query = document.getElementById("query").value;
+            const query = document.getElementById("query").value.trim();
 
-            // Define la URL del endpoint basado en el tipo de consulta
-            const endpoint = queryType === "natural"
-                ? "http://localhost:8080/api/sparql/natural-query"
-                : "http://localhost:8080/api/sparql/query";
+            let endpoint;
+            if (queryType === "natural") {
+                endpoint = "http://localhost:8080/api/sparql/natural-query";
+            } else if (queryType === "dbpedia") {
+                endpoint = "http://localhost:8080/api/sparql/dbpedia-query";
+            } else {
+                endpoint = "http://localhost:8080/api/sparql/query";
+            }
 
             try {
                 const response = await fetch(endpoint, {
