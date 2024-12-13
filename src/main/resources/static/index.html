@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Consulta SPARQL</title>
+</head>
+<body>
+    <h1>Consulta SPARQL o Lenguaje Natural</h1>
+
+    <label for="query-type">Tipo de Consulta:</label>
+    <select id="query-type">
+        <option value="sparql">Consulta SPARQL</option>
+        <option value="natural">Lenguaje Natural</option>
+    </select><br><br>
+
+    <textarea id="query" rows="10" cols="50" placeholder="Escribe tu consulta aquí"></textarea><br>
+    <button onclick="sendQuery()">Enviar Consulta</button>
+    <pre id="results"></pre>
+
+    <script>
+        async function sendQuery() {
+            const queryType = document.getElementById("query-type").value;
+            const query = document.getElementById("query").value;
+
+            // Define la URL del endpoint basado en el tipo de consulta
+            const endpoint = queryType === "natural"
+                ? "http://localhost:8080/api/sparql/natural-query"
+                : "http://localhost:8080/api/sparql/query";
+
+            try {
+                const response = await fetch(endpoint, {
+                    method: "POST",
+                    headers: { "Content-Type": "text/plain" },
+                    body: query
+                });
+
+                if (!response.ok) {
+                    throw new Error("Error en la consulta: " + response.statusText);
+                }
+
+                const results = await response.text();
+                document.getElementById("results").textContent = results;
+            } catch (error) {
+                document.getElementById("results").textContent = "Error: " + error.message;
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,1259 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11/"
+     xml:base="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-11="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Esespecialplatillo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Esespecialplatillo">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Esespecialplatillo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Menu"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Esespecialplatillo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosEspeciales"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Esrecomendado -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Esrecomendado">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Esrecomendado"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Menu"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Esrecomendado"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Recomendaciones"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosAltaCocina -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosAltaCocina">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosAltaCocina"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Menu"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosAltaCocina"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosAltaCocina"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TieneEstandares -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TieneEstandares">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TieneEstandares"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#HigieneSeguridad"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TieneEstandares"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#EstándaresHigiene"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TienePromociones -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TienePromociones">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TienePromociones"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#RestauranteAltaCocina"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TienePromociones"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Promociones"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TieneServicios -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TieneServicios">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TieneServicios"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#RestauranteAltaCocina"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TieneServicios"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ServiciosExclusivos"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#personal -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#personal">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#personal"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#OrganizacionCocina"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#personal"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#OrganizacionCocina"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#se_usa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#se_usa">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#personal"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PreparacionPlatillos"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#personal"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ProcedimientosEstandar"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#se_usa_tecnicas -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#se_usa_tecnicas">
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#personal"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PreparacionPlatillos"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#personal"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TecnicasCulinarias"/>
+            </owl:Restriction>
+        </rdfs:range>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#EstandaresHigiene -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#EstandaresHigiene"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Ingredientes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Ingredientes">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PreparacionPlatillos"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#se_usa"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ProcedimientosEstandar"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#se_usa_tecnicas"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TecnicasCulinarias"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#NombrePreparacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#NombrePreparacion">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PreparacionPlatillos"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#se_usa"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ProcedimientosEstandar"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#se_usa_tecnicas"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TecnicasCulinarias"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#NombreRecomendacion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#NombreRecomendacion">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatilloAltaCocina"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Esrecomendado"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Recomendaciones"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#OrganizacionCocina -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#OrganizacionCocina"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatilloAltaCocina -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatilloAltaCocina"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Precio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Precio">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatilloAltaCocina"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Esespecialplatillo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosEspeciales"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosAltaCocina"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosAltaCocina"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PreparacionPlatillos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PreparacionPlatillos"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Procedimiento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Procedimiento">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PreparacionPlatillos"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#se_usa"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ProcedimientosEstandar"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#se_usa_tecnicas"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TecnicasCulinarias"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Rol -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Rol">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#OrganizacionCocina"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ServicioProciones -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ServicioProciones"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ServiciosExclusivos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ServiciosExclusivos"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Temporada -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Temporada">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatilloAltaCocina"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Esespecialplatillo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosEspeciales"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Tiempo_de_cocción -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Tiempo_de_cocción">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PreparacionPlatillos"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#se_usa"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ProcedimientosEstandar"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#se_usa_tecnicas"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TecnicasCulinarias"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Técnica -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Técnica">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PreparacionPlatillos"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#se_usa"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ProcedimientosEstandar"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#se_usa_tecnicas"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TecnicasCulinarias"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Ventaja -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Ventaja">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PreparacionPlatillos"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#se_usa_tecnicas"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TecnicasCulinarias"/>
+            </owl:Restriction>
+        </rdfs:domain>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#categoriaServicio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#categoriaServicio">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ServiciosExclusivos"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TieneServicios"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ServiciosExclusivos"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#descripcionEstandar -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#descripcionEstandar">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#EstandaresHigiene"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TieneServicios"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#EstándaresHigiene"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#descripcionPlatillo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#descripcionPlatillo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatilloAltaCocina"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Esespecialplatillo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosEspeciales"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Esrecomendado"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Recomendaciones"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosAltaCocina"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosAltaCocina"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#descripcionPromocion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#descripcionPromocion">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ServicioProciones"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TieneServicios"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Promociones"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#descripcionservicio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#descripcionservicio">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ServiciosExclusivos"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TieneServicios"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ServiciosExclusivos"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#duracionServicio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#duracionServicio">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ServiciosExclusivos"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TieneServicios"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ServiciosExclusivos"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#especialidad -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#especialidad">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#OrganizacionCocina"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#nombreEstandar -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#nombreEstandar">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#EstandaresHigiene"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TieneServicios"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#EstándaresHigiene"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#nombrePlatillo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#nombrePlatillo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatilloAltaCocina"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Esespecialplatillo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosEspeciales"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Esrecomendado"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Recomendaciones"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosAltaCocina"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosAltaCocina"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#nombrePromocion -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#nombrePromocion">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ServicioProciones"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TieneServicios"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Promociones"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#nombreServicio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#nombreServicio">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ServiciosExclusivos"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TieneServicios"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ServiciosExclusivos"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#precioServicio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#precioServicio">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ServiciosExclusivos"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TieneServicios"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ServiciosExclusivos"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#requisitos -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#requisitos">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ServicioProciones"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TieneServicios"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Promociones"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#responsabilidades -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#responsabilidades">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#OrganizacionCocina"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#tipoPlatillo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#tipoPlatillo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatilloAltaCocina"/>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Esespecialplatillo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosEspeciales"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:domain>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosAltaCocina"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosAltaCocina"/>
+            </owl:Restriction>
+        </rdfs:domain>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#AtencionCliente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#AtencionCliente">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#RestauranteAltaCocina"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#CalidadServicio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#CalidadServicio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#AtencionCliente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Camareros -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Camareros">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#OrganizacionEquipoSala"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Certificaciones -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Certificaciones">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#RequisitosPersonal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ChefPrincipal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ChefPrincipal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#RolesEquipoCocina"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Cocineros -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Cocineros">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#RolesEquipoCocina"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#EstándaresHigiene -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#EstándaresHigiene">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#HigieneSeguridad"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Experiencia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Experiencia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#RequisitosPersonal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Habilidades -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Habilidades">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#RequisitosPersonal"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#HigieneSeguridad -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#HigieneSeguridad">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#RestauranteAltaCocina"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Maître -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Maître">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#OrganizacionEquipoSala"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Menu -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Menu">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#RestauranteAltaCocina"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#OrganizacionCocina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#OrganizacionCocina">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#RestauranteAltaCocina"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#OrganizacionEquipoSala -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#OrganizacionEquipoSala">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#OrganizacionCocina"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosAltaCocina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosAltaCocina">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Menu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosEspeciales -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosEspeciales">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Menu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PreparacionPlatillos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PreparacionPlatillos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#RestauranteAltaCocina"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ProcedimientosEstandar -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ProcedimientosEstandar">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PreparacionPlatillos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ProcesoReserva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ProcesoReserva">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Reservas"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Promociones -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Promociones">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Servicios"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ProtocolosServicio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ProtocolosServicio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#AtencionCliente"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Recomendaciones -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Recomendaciones">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Menu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#RequisitosPersonal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#RequisitosPersonal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#RestauranteAltaCocina"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Reservas -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Reservas">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#RestauranteAltaCocina"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#RestauranteAltaCocina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#RestauranteAltaCocina"/>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#RestriccionesAlimenticias -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#RestriccionesAlimenticias">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Menu"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#RolesEquipoCocina -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#RolesEquipoCocina">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#OrganizacionCocina"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#SeleccionIngredientes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#SeleccionIngredientes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PreparacionPlatillos"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Servicios -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Servicios">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#RestauranteAltaCocina"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ServiciosExclusivos -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ServiciosExclusivos">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Servicios"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Sommeliers -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Sommeliers">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#OrganizacionEquipoSala"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#SousChef -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#SousChef">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#RolesEquipoCocina"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TecnicasCulinarias -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TecnicasCulinarias">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PreparacionPlatillos"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Estandar1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Estandar1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#EstándaresHigiene"/>
+        <untitled-ontology-11:descripcionEstandar>La limpieza de superficies y utensilios es fundamental para evitar la contaminación de los alimentos. Las superficies de trabajo, equipos y utensilios deben ser limpiados y desinfectados regularmente, especialmente entre el manejo de diferentes tipos de alimentos, como carnes crudas y productos listos para comer. Además, se deben utilizar detergentes y desinfectantes aprobados, siguiendo las instrucciones del fabricante para garantizar su efectividad.
+
+Frecuencia: Las superficies deben limpiarse antes, durante y después de la preparación de alimentos.
+Recomendaciones: Utilizar tablas de cortar separadas para alimentos crudos y cocidos, y asegurarse de que todos los utensilios (cuchillos, cucharas, etc.) sean limpiados inmediatamente después de su uso.</untitled-ontology-11:descripcionEstandar>
+        <untitled-ontology-11:nombreEstandar>Limpieza de Superficies y Utensilios</untitled-ontology-11:nombreEstandar>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Estandar2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Estandar2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#EstándaresHigiene"/>
+        <untitled-ontology-11:descripcionEstandar>Descripción: Los equipos y la infraestructura del restaurante deben mantenerse en condiciones óptimas para asegurar que no haya riesgos de contaminación. Esto incluye la limpieza y mantenimiento regular de electrodomésticos como hornos, refrigeradores, y lavavajillas, así como la reparación de cualquier equipo dañado que pueda representar un peligro para la seguridad alimentaria.
+
+Frecuencia: Mantenimiento preventivo periódico, así como inspecciones diarias para detectar cualquier mal funcionamiento.
+Recomendaciones: Los equipos deben ser desmontados y limpiados regularmente, y se deben realizar auditorías para asegurarse de que todo está en buen estado de funcionamiento.</untitled-ontology-11:descripcionEstandar>
+        <untitled-ontology-11:nombreEstandar>Mantenimiento Adecuado de la Infraestructura y Equipos de Cocina</untitled-ontology-11:nombreEstandar>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Estandar3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Estandar3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#EstándaresHigiene"/>
+        <untitled-ontology-11:descripcionEstandar>La capacitación del personal en prácticas de higiene es crucial para garantizar que todos los empleados sigan procedimientos seguros y efectivos en la manipulación de alimentos. El personal debe ser entrenado regularmente en técnicas de lavado de manos, uso adecuado de equipo de protección (guantes, gorros, etc.), y manejo seguro de alimentos. Además, se debe llevar a cabo una supervisión continua para asegurar que se sigan los protocolos de higiene.
+
+Frecuencia: La capacitación debe realizarse al inicio del empleo y repetirse al menos una vez al año. La supervisión debe ser diaria.
+Recomendaciones: Implementar un sistema de control para asegurar que los empleados están cumpliendo con las normas de higiene. Esto puede incluir revisiones periódicas y sanciones por no seguir las prácticas adecuadas.</untitled-ontology-11:descripcionEstandar>
+        <untitled-ontology-11:nombreEstandar>Capacitación y Supervisión del Personal en Prácticas de Higiene</untitled-ontology-11:nombreEstandar>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Platillo1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Platillo1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosAltaCocina"/>
+        <untitled-ontology-11:Precio rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">55</untitled-ontology-11:Precio>
+        <untitled-ontology-11:descripcionPlatillo>Exquisito filete de res a la parrilla, acompañado de una suave reducción de vino tinto y servido con puré de papas trufado</untitled-ontology-11:descripcionPlatillo>
+        <untitled-ontology-11:nombrePlatillo>Filete de Res a la Parrilla con Reducción de Vino Tinto</untitled-ontology-11:nombrePlatillo>
+        <untitled-ontology-11:tipoPlatillo>Plato Principal</untitled-ontology-11:tipoPlatillo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Platillo2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Platillo2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosAltaCocina"/>
+        <untitled-ontology-11:Precio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</untitled-ontology-11:Precio>
+        <untitled-ontology-11:descripcionPlatillo>Fresco tartar de atún servido con aguacate en rodajas y una delicada salsa de sésamo, adornado con brotes frescos</untitled-ontology-11:descripcionPlatillo>
+        <untitled-ontology-11:nombrePlatillo>Tartar de Atún con Aguacate y Salsa de Sésamo</untitled-ontology-11:nombrePlatillo>
+        <untitled-ontology-11:tipoPlatillo>Entrada</untitled-ontology-11:tipoPlatillo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Platillo3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Platillo3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosAltaCocina"/>
+        <untitled-ontology-11:Precio rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">100</untitled-ontology-11:Precio>
+        <untitled-ontology-11:descripcionPlatillo>Deliciosa mousse de chocolate blanco, acompañada de una selección de frutas del bosque frescas, ideal para finalizar una comida</untitled-ontology-11:descripcionPlatillo>
+        <untitled-ontology-11:nombrePlatillo>Mousse de Chocolate Blanco con Frutas del Bosque</untitled-ontology-11:nombrePlatillo>
+        <untitled-ontology-11:tipoPlatillo>Postre</untitled-ontology-11:tipoPlatillo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Platillos -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Platillos">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PreparacionPlatillos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Procedimiento1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Procedimiento1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ProcedimientosEstandar"/>
+        <untitled-ontology-11:Ingredientes>Mantequilla, harina, caldo (pollo, carne o vegetal).</untitled-ontology-11:Ingredientes>
+        <untitled-ontology-11:NombrePreparacion>Preparación de Salsas Básicas</untitled-ontology-11:NombrePreparacion>
+        <untitled-ontology-11:Procedimiento>Fundir mantequilla, agregar harina y cocinar por 2 minutos; añadir caldo y reducir.</untitled-ontology-11:Procedimiento>
+        <untitled-ontology-11:Tiempo_de_cocción>10-15 minutos.</untitled-ontology-11:Tiempo_de_cocción>
+        <untitled-ontology-11:Técnica>Roux (base de harina y grasa).</untitled-ontology-11:Técnica>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Procedimiento2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Procedimiento2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ProcedimientosEstandar"/>
+        <untitled-ontology-11:Ingredientes>Pescado fresco (salmón, dorada), aceite de oliva, sal.</untitled-ontology-11:Ingredientes>
+        <untitled-ontology-11:NombrePreparacion>Cocción de Pescado</untitled-ontology-11:NombrePreparacion>
+        <untitled-ontology-11:Procedimiento>Sellar el pescado a fuego alto en sartén y luego cocinar a fuego lento.</untitled-ontology-11:Procedimiento>
+        <untitled-ontology-11:Tiempo_de_cocción>6-8 minutos por cada lado.</untitled-ontology-11:Tiempo_de_cocción>
+        <untitled-ontology-11:Técnica>Sellado seguido de cocción lenta</untitled-ontology-11:Técnica>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Procedimiento3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Procedimiento3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ProcedimientosEstandar"/>
+        <untitled-ontology-11:Ingredientes>Pasta (espaguetis, penne), agua con sal.</untitled-ontology-11:Ingredientes>
+        <untitled-ontology-11:NombrePreparacion>Preparación de Pasta al Dente</untitled-ontology-11:NombrePreparacion>
+        <untitled-ontology-11:Procedimiento>8-10 minutos</untitled-ontology-11:Procedimiento>
+        <untitled-ontology-11:Procedimiento>Pasta (espaguetis, penne), agua con sal.</untitled-ontology-11:Procedimiento>
+        <untitled-ontology-11:Técnica>Cocción en abundante agua y control constante para evitar que se pase</untitled-ontology-11:Técnica>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Promocion1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Promocion1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Promociones"/>
+        <untitled-ontology-11:descripcionPromocion>Ofrecer un menú exclusivo, diseñado por el chef, a un precio especial. Este menú puede ser limitado a ciertos días o eventos especiales.</untitled-ontology-11:descripcionPromocion>
+        <untitled-ontology-11:descripcionPromocion>Solo válido para reservas realizadas para el 14 de febrero.</untitled-ontology-11:descripcionPromocion>
+        <untitled-ontology-11:nombrePromocion>Menú Degustación Especial</untitled-ontology-11:nombrePromocion>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Promocion2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Promocion2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Promociones"/>
+        <untitled-ontology-11:descripcionPromocion>Disfruta de un 15% de descuento en todas las órdenes de comida a domicilio realizadas a través de nuestra app o página web</untitled-ontology-11:descripcionPromocion>
+        <untitled-ontology-11:nombrePromocion>Promoción para Comidas a Domicilio</untitled-ontology-11:nombrePromocion>
+        <untitled-ontology-11:requisitos>La promoción es válida solo para pedidos a domicilio realizados a través de nuestra app o página web</untitled-ontology-11:requisitos>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Promocion3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Promocion3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Promociones"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Recom1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Recom1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Recomendaciones"/>
+        <untitled-ontology-11:NombreRecomendacion>Prosecco</untitled-ontology-11:NombreRecomendacion>
+        <untitled-ontology-11:descripcionPlatillo>Un vino espumoso italiano con burbujas finas y refrescantes, con notas de frutas cítricas y flores. La efervescencia limpia el paladar entre cada bocado de la tarta</untitled-ontology-11:descripcionPlatillo>
+        <untitled-ontology-11:nombrePlatillo>Langosta Termidor con Salsa Bechamel y Caviar</untitled-ontology-11:nombrePlatillo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Recom2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Recom2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Recomendaciones"/>
+        <untitled-ontology-11:NombreRecomendacion>Chardonnay</untitled-ontology-11:NombreRecomendacion>
+        <untitled-ontology-11:descripcionPlatillo>Este vino blanco tiene notas de frutas cítricas, manzana verde y un toque de roble. Su cremosidad y acidez equilibran perfectamente la textura rica de la salsa de trufa</untitled-ontology-11:descripcionPlatillo>
+        <untitled-ontology-11:nombrePlatillo>Raviolis de Trufa con Salsa Cremosa</untitled-ontology-11:nombrePlatillo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Recom3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Recom3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Recomendaciones"/>
+        <untitled-ontology-11:NombreRecomendacion>Pinot Noir</untitled-ontology-11:NombreRecomendacion>
+        <untitled-ontology-11:descripcionPlatillo>Un vino tinto elegante y suave, con notas de cereza y un toque sutil de especias. Su acidez equilibrada combina perfectamente con la dulzura de la salsa de naranja</untitled-ontology-11:descripcionPlatillo>
+        <untitled-ontology-11:nombrePlatillo>Pato a la Naranja</untitled-ontology-11:nombrePlatillo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Servicio1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Servicio1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ServiciosExclusivos"/>
+        <untitled-ontology-11:categoriaServicio>Cocina</untitled-ontology-11:categoriaServicio>
+        <untitled-ontology-11:descripcionservicio>Cena exclusiva con menú personalizado para grupos pequeños. Ambiente íntimo y atención personalizada</untitled-ontology-11:descripcionservicio>
+        <untitled-ontology-11:duracionServicio>2 horas</untitled-ontology-11:duracionServicio>
+        <untitled-ontology-11:nombreServicio>Cena Privada</untitled-ontology-11:nombreServicio>
+        <untitled-ontology-11:precioServicio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">180</untitled-ontology-11:precioServicio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Servicio2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Servicio2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ServiciosExclusivos"/>
+        <untitled-ontology-11:descripcionservicio>Cena exclusiva con menú personalizado para grupos pequeños. Ambiente íntimo y atención personalizada</untitled-ontology-11:descripcionservicio>
+        <untitled-ontology-11:duracionServicio>2 horas</untitled-ontology-11:duracionServicio>
+        <untitled-ontology-11:nombreServicio>Cena exclusiva con menú personalizado para grupos pequeños. Ambiente íntimo y atención personalizada</untitled-ontology-11:nombreServicio>
+        <untitled-ontology-11:precioServicio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">130</untitled-ontology-11:precioServicio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Servicio3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Servicio3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ServiciosExclusivos"/>
+        <untitled-ontology-11:categoriaServicio>Cocina</untitled-ontology-11:categoriaServicio>
+        <untitled-ontology-11:descripcionservicio>Brunch de Fin de Semana</untitled-ontology-11:descripcionservicio>
+        <untitled-ontology-11:duracionServicio>3 horas</untitled-ontology-11:duracionServicio>
+        <untitled-ontology-11:nombreServicio>Brunch de Fin de Semana</untitled-ontology-11:nombreServicio>
+        <untitled-ontology-11:precioServicio rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">230</untitled-ontology-11:precioServicio>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Servicio4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Servicio4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ServiciosExclusivos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Servicio5 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Servicio5">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#ServiciosExclusivos"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Tecnica1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Tecnica1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TecnicasCulinarias"/>
+        <untitled-ontology-11:Ingredientes>Filete de res, hierbas, sal, pimienta</untitled-ontology-11:Ingredientes>
+        <untitled-ontology-11:NombrePreparacion>Sous-Vide</untitled-ontology-11:NombrePreparacion>
+        <untitled-ontology-11:Procedimiento>2 horas</untitled-ontology-11:Procedimiento>
+        <untitled-ontology-11:Procedimiento>Sellado en bolsa de vacío y cocción en agua caliente a baja temperatura (60°C) durante 2 horas.</untitled-ontology-11:Procedimiento>
+        <untitled-ontology-11:Ventaja>Retención de jugos y sabor.</untitled-ontology-11:Ventaja>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Tecnica2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Tecnica2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TecnicasCulinarias"/>
+        <untitled-ontology-11:Ingredientes>Pato, aceite de canola.</untitled-ontology-11:Ingredientes>
+        <untitled-ontology-11:NombrePreparacion>Confitado</untitled-ontology-11:NombrePreparacion>
+        <untitled-ontology-11:Procedimiento>Cocción lenta del pato en su propia grasa a baja temperatura (90°C) durante 3-4 horas.</untitled-ontology-11:Procedimiento>
+        <untitled-ontology-11:Tiempo_de_cocción>3-4 horas.</untitled-ontology-11:Tiempo_de_cocción>
+        <untitled-ontology-11:Ventaja>Carne tierna y jugosa</untitled-ontology-11:Ventaja>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Tecnica3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#Tecnica3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#TecnicasCulinarias"/>
+        <untitled-ontology-11:Ingredientes>Verduras (pimientos, cebolla), carne (pollo, cerdo), aceite</untitled-ontology-11:Ingredientes>
+        <untitled-ontology-11:NombrePreparacion>Salteado (Stir-fry)</untitled-ontology-11:NombrePreparacion>
+        <untitled-ontology-11:Procedimiento>Cocción rápida en sartén caliente con una pequeña cantidad de aceite.</untitled-ontology-11:Procedimiento>
+        <untitled-ontology-11:Tiempo_de_cocción>5-7 minutos</untitled-ontology-11:Tiempo_de_cocción>
+        <untitled-ontology-11:Ventaja>Conserva el sabor y la textura crujiente.</untitled-ontology-11:Ventaja>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#platilloespecial1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#platilloespecial1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosEspeciales"/>
+        <untitled-ontology-11:Precio rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">150</untitled-ontology-11:Precio>
+        <untitled-ontology-11:Temporada>Navidad</untitled-ontology-11:Temporada>
+        <untitled-ontology-11:descripcionPlatillo>Langosta fresca, rellena con una cremosa salsa bechamel, gratinada al horno y acompañada de caviar negro</untitled-ontology-11:descripcionPlatillo>
+        <untitled-ontology-11:nombrePlatillo>Langosta Termidor con Salsa Bechamel y Caviar</untitled-ontology-11:nombrePlatillo>
+        <untitled-ontology-11:tipoPlatillo>Plato Principal</untitled-ontology-11:tipoPlatillo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#platilloespecial2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#platilloespecial2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosEspeciales"/>
+        <untitled-ontology-11:Precio rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">200</untitled-ontology-11:Precio>
+        <untitled-ontology-11:Temporada>Otoño</untitled-ontology-11:Temporada>
+        <untitled-ontology-11:descripcionPlatillo>Un risotto cremoso preparado con arroz arborio, infundido con aceite de trufa negra y servido con lascas de parmesano añejo</untitled-ontology-11:descripcionPlatillo>
+        <untitled-ontology-11:nombrePlatillo>Risotto de Trufa Negra con Parmesano Añejo</untitled-ontology-11:nombrePlatillo>
+        <untitled-ontology-11:tipoPlatillo>Plato Principal</untitled-ontology-11:tipoPlatillo>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#platilloespecial3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#platilloespecial3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/fernando/ontologies/2024/11/untitled-ontology-11#PlatillosEspeciales"/>
+        <untitled-ontology-11:Precio rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">150</untitled-ontology-11:Precio>
+        <untitled-ontology-11:Temporada>Primavera</untitled-ontology-11:Temporada>
+        <untitled-ontology-11:descripcionPlatillo>Tarta fresca de limón y menta, coronada con un merengue suave y decorada con frutas exóticas como maracuyá y kiwi</untitled-ontology-11:descripcionPlatillo>
+        <untitled-ontology-11:nombrePlatillo>Tarta de Limón y Menta con Merengue y Frutas Exóticas</untitled-ontology-11:nombrePlatillo>
+        <untitled-ontology-11:tipoPlatillo>Postre</untitled-ontology-11:tipoPlatillo>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
